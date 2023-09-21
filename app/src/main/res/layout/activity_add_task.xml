@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lotion"
+    tools:context=".activities.AddTaskActivity">
+    <View
+        android:id="@+id/viewTopTask"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/bg_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageButton
+        android:id="@+id/ibBackTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/_10sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/button"
+        app:layout_constraintTop_toTopOf="@id/viewTopTask"
+        app:layout_constraintBottom_toBottomOf="@id/viewTopTask"
+        app:layout_constraintStart_toStartOf="@id/viewTopTask"/>
+
+    <TextView
+        android:id="@+id/tvHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_task_reminder"
+        android:textAlignment="center"
+        android:textColor="@color/lotion"
+        android:textSize="@dimen/_17ssp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="@id/viewTopTask"
+        app:layout_constraintEnd_toEndOf="@id/viewTopTask"
+        app:layout_constraintBottom_toBottomOf="@id/viewTopTask"
+        app:layout_constraintTop_toTopOf="@id/viewTopTask"/>
+
+    <TextView
+        android:id="@+id/tvHeadTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/jelly_been_blue"
+        android:text="@string/all_tasks"
+        android:gravity="center|start"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@id/viewTopTask"
+        app:layout_constraintEnd_toEndOf="@id/viewTopTask"
+        app:layout_constraintTop_toBottomOf="@id/viewTopTask"
+        app:drawableEndCompat="@drawable/ic_schedule" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/tvHeadTasks"
+        app:layout_constraintEnd_toEndOf="@id/tvHeadTasks"
+        app:layout_constraintTop_toBottomOf="@id/tvHeadTasks"
+        app:layout_constraintBottom_toTopOf="@id/tvAddTasks"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ivThumbTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_add_some_tasks"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/smoky_black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableTopCompat="@drawable/ic_add" />
+
+    <TextView
+        android:id="@+id/tvAddTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/jelly_been_blue"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/add_tasks"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/_14ssp"
+        android:drawablePadding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvHeadTasks"
+        app:layout_constraintEnd_toEndOf="@id/tvHeadTasks"
+        app:drawableStartCompat="@drawable/ic_alarm_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_20sdp"
+    android:background="@drawable/bg_dialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvTopDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/jelly_been_blue"
+        android:textSize="@dimen/_14ssp"
+        android:text="@string/_confirmation"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvBodyDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:textColor="@color/smoky_black"
+        android:textSize="@dimen/_12ssp"
+        android:textAlignment="center"
+        android:text="@string/sureToDelete"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="@id/tvTopDialog"
+        app:layout_constraintEnd_toEndOf="@id/tvTopDialog"
+        app:layout_constraintTop_toBottomOf="@id/tvTopDialog"
+        />
+
+    <View
+        android:id="@+id/viewCenter"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBodyDialog" />
+
+    <Button
+        android:id="@+id/btnYesDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:backgroundTint="@color/sea_green"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/_yes"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewCenter"
+        app:layout_constraintStart_toEndOf="@+id/viewCenter"
+        app:layout_constraintTop_toTopOf="@id/viewCenter" />
+
+
+    <Button
+        android:id="@+id/btnNoDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dim_gray"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/_no"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@id/viewCenter"
+        app:layout_constraintEnd_toStartOf="@+id/viewCenter"
+        app:layout_constraintTop_toTopOf="@id/viewCenter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

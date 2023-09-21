@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "587729375993",
+    "project_id": "cat-care-ba8e5",
+    "storage_bucket": "cat-care-ba8e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587729375993:android:a128cf204fea1f00d14828",
+        "android_client_info": {
+          "package_name": "com.app.catcare.ayaz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587729375993-1hg0adkvl407fl8k1js6dm30nov0plku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.catcare.ayaz",
+            "certificate_hash": "808c7cca73bd09614ad145c61d906921d482f6ab"
+          }
+        },
+        {
+          "client_id": "587729375993-jarc8k7rh1dnjp6n84j2jkvqdqd2luqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyHj5dvfWqaV2VAkaJ-cuIdxxxOdcEXN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587729375993-jarc8k7rh1dnjp6n84j2jkvqdqd2luqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
